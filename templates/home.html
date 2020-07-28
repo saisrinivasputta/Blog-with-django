@@ -1,0 +1,11 @@
+{% extends "render.html" %}
+
+{% block content %}
+     <div class='row'>
+     {% for object in object_list %}
+          {% include "in-line.html" with truncate=True %}
+
+     {% endfor %}
+ </div>
+
+{% endblock %}

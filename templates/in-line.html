@@ -1,0 +1,16 @@
+<div class='col-12 col-md-10 mb-3 mx-auto'>
+
+<div class='card'>
+   <div class='card-body'>
+       {% if object.image %}
+            <img src="{{object.image.url}}" class='card-img-top'/>
+
+
+
+       {% endif %}
+       <h5 class='card-title'>{{object.title}}</h5>
+        <p class='card-text'>{{object.content|linebreaks|truncatewords:30}}</p>
+    </div>
+            <a href="detail/{{object.get_absolute_url}}">View</a>
+</div>
+</div>
